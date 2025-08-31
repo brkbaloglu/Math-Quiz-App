@@ -155,6 +155,7 @@ function showScore() {
     resetState()
     questionElement.innerHTML = `
         Doğru Sayısı: ${score}
+        <br>
         Yanlış Sayısı: ${questions.length - score} 
     `
     nextButton.innerHTML = "Play Again"
