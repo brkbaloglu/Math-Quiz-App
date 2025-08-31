@@ -153,7 +153,10 @@ function selectAnswer(e){
 
 function showScore() {
     resetState()
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}`
+    questionElement.innerHTML = `
+        Doğru Sayısı: ${score}
+        Yanlış Sayısı: ${questions.length - score} 
+    `
     nextButton.innerHTML = "Play Again"
     nextButton.style.display = "block"
 }
